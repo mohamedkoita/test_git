@@ -25,8 +25,8 @@
       </p>
       <p> <input type="submit" value="Enregistrer"></p>
     </form>
-    <a href="lister.php">Afficher la liste des contacts</a>
-
+    <a href="lister.php"> <button type="button" name="button">Afficher la liste des contatcs</button> </a>
+    <a href="formrecherche.php"> <button type="button" name="button">Rechercher un contatct dans la liste</button> </a>
 
   </body>
 </html>

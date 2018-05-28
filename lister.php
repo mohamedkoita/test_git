@@ -4,14 +4,14 @@ $objetPDO = new PDO('mysql:host=localhost;dbname=agenda', 'root', '');
 
 //preparation de la requête
 $pdoStat = $objetPDO->prepare(' SELECT * FROM contact ');
-var_dump($pdoStat);
+//var_dump($pdoStat);
 
 //execution de la requete préparée
 $executeIsOk = $pdoStat->execute();
 
 //récupération des résultats en une seule fois.
 $contacts=$pdoStat->fetchAll();
-var_dump($contacts);
+//var_dump($contacts);
 
  ?>
  <!DOCTYPE html>
@@ -30,6 +30,8 @@ var_dump($contacts);
        <?php endforeach; ?>
      </ul>
 
-     <a href="index.php">Insérer un nouveau contact</a>
+     <a href="index.php"> <button type="button" name="button">Insérer un nouveau contact</button> </a>
+     <a href="formrecherche.php"> <button type="button" name="button">Rechercher un contatct dans la liste</button> </a>
+
    </body>
  </html>
