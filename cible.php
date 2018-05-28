@@ -36,7 +36,7 @@ else {
   <body>
     <h1>Insertion des contatcs</h1>
     <p> <?php echo $message; ?> </p>
-    <a href="index.php">Insérer un nouveau contact</a>
-    <a href="lister.php">Afficher la liste des contacts</a>
+    <a href="index.php"> <button type="button" name="button">Insérer un nouveau contact</button> </a>
+    <a href="lister.php"> <button type="button" name="button">Afficher la liste des contacts</button> </a>
   </body>
 </html>
