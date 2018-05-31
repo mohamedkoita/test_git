@@ -19,7 +19,7 @@ $pdoStat->bindValue(':mail', $_POST['mail'], PDO::PARAM_STR);
 $insertIsOk = $pdoStat->execute();
 
 if($insertIsOk){
-  $message = ' Le contact a été mis à jour ! ';
+  $message = ' Le contact a été mis à jour !';
 }
 else {
   $message = 'Echec de la mise à jour';
