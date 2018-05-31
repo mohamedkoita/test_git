@@ -5,7 +5,8 @@
     <title>Contact</title>
   </head>
   <body>
-    <h1>Ajouter un contact de la branche</h1>
+    <h1>Bienvenue sur le système de gestion de contacts</h1>
+    <h2>Ajouter un contact</h2>
     <form class="" action="cible.php" method="post">
       <p>
         <label for="">Nom</label>
