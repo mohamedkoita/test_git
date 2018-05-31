@@ -49,5 +49,10 @@ while ($donnees = $req->fetch())
 } // Fin de la boucle des billets
 $req->closeCursor();
 ?>
+
+<h2> Ajouter un nouveau Billet de blog </h2>
+
+
+
 </body>
 </html>
