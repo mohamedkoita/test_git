@@ -3,7 +3,7 @@
 $objetPDO = new PDO('mysql:host=localhost;dbname=agenda', 'root', '');
 
 //preparation de la requête
-$pdoStat = $objetPDO->prepare(' SELECT * FROM contact ');
+$pdoStat = $objetPDO->prepare(' SELECT * FROM contact ORDER BY nom ASC ');
 //var_dump($pdoStat);
 
 //execution de la requete préparée
@@ -25,7 +25,7 @@ $contacts=$pdoStat->fetchAll();
      <ul>
        <?php foreach ($contacts as $contact): ?>
          <li>
-           <?= $contact['nom'] ?> <?= $contact['prenom'] ?>-<?= $contact['tel'] ?>-<?= $contact['mail'] ?>
+           <?= $contact['nom'] ?> <?= $contact['prenom'] ?>-<?= $contact['tel'] ?>-<?= $contact['mail'] ?> <a href="supprimer.php?numContact=<?= $contact['id'] ?>">Supprimer</a> <a href="form_modif.php?numContact=<?= $contact['id'] ?>">Modifier</a>
          </li>
        <?php endforeach; ?>
      </ul>
