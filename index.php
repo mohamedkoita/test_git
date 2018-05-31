@@ -5,7 +5,7 @@
     <title>Contact</title>
   </head>
   <body>
-    <h1>Ajouter un contact de la branche momo</h1>
+    <h1>Ajouter un contact de la branche</h1>
     <form class="" action="cible.php" method="post">
       <p>
         <label for="">Nom</label>
