@@ -52,6 +52,18 @@ $req->closeCursor();
 
 <h2> Ajouter un nouveau Billet de blog </h2>
 
+<form class="" action="cible2.php" method="post">
+  <p><label for="">Titre du blog</label>
+  <input type="text" name="titre" value=""></p>
+
+  <p><label>Contenu du blog</label>
+  <textarea name="contenu" rows="8" cols="80"></textarea>
+
+  <p><input type="submit" name="" value="Enregistrer"></p>
+
+
+</form>
+
 
 
 </body>

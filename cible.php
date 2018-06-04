@@ -5,6 +5,7 @@ $objetPDO = new PDO('mysql:host=localhost;dbname=agenda', 'root', '');
 //préparation de la requete SQL
 
 $pdoStat = $objetPDO->prepare('INSERT INTO contact VALUES (NULL, :nom, :prenom, :telephone, :mail)');
+var_dump($pdoStat);
 
 //on lie chaque marqueur à valeur
 
