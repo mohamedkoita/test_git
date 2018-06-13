@@ -7,6 +7,9 @@
   <body>
     <h1>Bienvenue sur le système de gestion de contacts</h1>
     <h2>Ajouter un contact</h2>
+    <script type="text/javascript">
+      alert('Bienvenu sur mon site !');
+    </script>
     <form class="" action="cible.php" method="post">
       <p>
         <label for="">Nom</label>
